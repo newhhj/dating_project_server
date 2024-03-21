@@ -1,0 +1,42 @@
+﻿@page "/managerlistitem/{id:int?}"
+@layout EmptyLayout
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">계정 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">닉네임</span>
+                <input @bind="this.Item.Nickname" placeholder="닉네임을 입력하세요." />
+            </div>
+            <div class="row-box">
+                <span class="label-name">아이디</span>
+                <input @bind="this.Item.UserId" placeholder="아이디를 입력하세요." />
+            </div>
+            <div class="row-box">
+                <span class="label-name">비밀번호</span>
+                <input type="password" @bind="this.Item.Passwd" placeholder="비밀번호를 입력하세요." />
+            </div>
+            @if (this.Item.Id != 0)
+            {
+                <div class="row-box">
+                    <span class="label-name">사용여부</span>
+                    <select @onchange='(e) => { this.Item.Useage = (string)e.Value == "1"; }'>
+                        <option value="1" selected="@(this.Item.Useage)">사용</option>
+                        <option value="0" selected="@(!this.Item.Useage)">미사용</option>
+                    </select>
+                </div>    
+            }
+        </div>
+        <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="AcceptMemberAsync">@(this.Item.Id == 0 ? "등록" : "적용")</button>
+    </div>
+}

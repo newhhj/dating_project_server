@@ -1,0 +1,37 @@
+﻿.menu-box {
+    flex-basis: 200px;
+    min-height: 100%;
+    background-color: #4a9cff21;
+}
+
+.menu-box .menu-item {
+    display: flex;
+    height: 40px;
+    box-sizing: border-box;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    color: #3670B6;
+    padding: 0 10px;
+    border-left: 5px solid transparent;
+}
+
+.menu-box .active > .menu-item {
+    background-color: #4A9CFF;
+    color: #ffffff;
+    border-left: 5px solid #3670B6;
+}
+
+.menu-box i {
+    text-align: center;
+    width: 30px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.menu-box .spliter {
+    display: block;
+    height: 1px;
+    background-color: #bbdaff;
+    margin: 0 10px;
+}

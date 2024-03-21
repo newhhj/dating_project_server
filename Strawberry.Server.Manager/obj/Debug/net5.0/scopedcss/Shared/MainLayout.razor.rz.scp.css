@@ -1,0 +1,53 @@
+div.top-bar[b-mfwriva1hg] {
+    display: flex;
+    height: 50px;
+    background-color: #4a9cff21;
+}
+
+.top-bar-title[b-mfwriva1hg] {
+    flex-basis: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4A9CFF;
+}
+
+.top-bar-body[b-mfwriva1hg] {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+    color: #3670B6;
+}
+
+.top-bar-option[b-mfwriva1hg] {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10px;
+    color: #3670B6;
+}
+
+.top-bar-option .btn-logout[b-mfwriva1hg] {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-option .btn-logout > i[b-mfwriva1hg] {
+    margin-right: 5px;
+}
+
+.body-box[b-mfwriva1hg] {
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
+
+.page-box[b-mfwriva1hg] {
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}

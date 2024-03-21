@@ -1,0 +1,32 @@
+﻿@page "/pushmessage"
+@layout MainLayout
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">메세지 발송</span>
+    <div class="context-box">
+        <div class="row-box">
+            <span class="label-name">대상</span>
+            <div class="update-box">
+                <select @bind="this.SelectGenderType" style="width: 100%;">
+                    <option>전체</option>
+                    <option value="@Database.GenderTypes.Male">남성</option>
+                    <option value="@Database.GenderTypes.Female">여성</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-box" style="margin-top: 20px;">
+            <span class="label-name">내용</span>
+            <input @bind='this.Message' style="width: 100%;" />
+        </div>
+        <span style="font-size: 10px; margin-top: 20px; color: red; display: block;">※ 푸시 메세지 발송은 시간이 걸릴수 있으니 새로고침 또는 메뉴이동을 하지 말고 기다려 주시기 바랍니다.</span>
+        <button style="background-color: #4a9cff; color: #ffffff; width: 100%;" @onclick="SendMessageAsync">@(this.ButtonText)</button>
+    </div>
+}

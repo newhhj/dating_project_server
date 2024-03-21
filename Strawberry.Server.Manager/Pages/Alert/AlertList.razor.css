@@ -1,0 +1,13 @@
+﻿input[type=radio] {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=radio]+label {
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 20px;
+    display: inline-block;
+}

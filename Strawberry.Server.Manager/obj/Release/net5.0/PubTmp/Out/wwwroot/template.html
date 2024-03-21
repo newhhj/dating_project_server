@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="css/site.css" rel="stylesheet" />
+    
+    <style type="text/css">
+        .template {
+            padding: 10px;
+        }
+
+        .row-box:nth-child(n+2) {
+            margin-top: 16px;
+        }
+
+        .row-box input,
+        .row-box select,
+        .row-box textarea {
+            width: 100%;
+        }
+
+        .img-box {
+            border: 1px solid #808080;
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+            height: 200px;
+        }
+
+        .img-box > div {
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            height: 100%;
+        }
+
+        .img-box > div > div {
+            margin-right: 5px;
+        }
+
+        .img-box > div > div:last-child {
+            margin-right: initial;
+        }
+
+        .img-box img {
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .btn-removeimg {
+            height: 0;
+            overflow: visible;
+            text-align: right;
+        }
+
+        .btn-removeimg > button {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 24px;
+            width: 24px;
+            height: 24px;
+            background-color: #c42727;
+            margin: 4px;
+        }
+
+        button {
+            background-color: #4a9cff;
+            color: #ffffff;
+            padding: 0;
+        }
+
+        .update-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .update-box > *:first-child {
+            flex-grow: 1;
+        }
+
+        .update-box > *:last-child {
+            flex-basis: 30px;
+            margin-left: 5px;
+        }
+
+        .sub-point-box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .sub-point-box span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #4a9cff;
+            color: #ffffff;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="template">
+
+        <div class="pageloading-box">
+            데이터를 가져오는 중입니다.<br />
+            잠시만 기다려 주세요.
+        </div>
+
+        <span class="label-title">회원 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">닉네임</span>
+                <input value="하늘이" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">프로필 이미지</span>
+                <div class="img-box">
+                    <div>
+                        <div>
+                            <div class="btn-removeimg">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <img src="https://t1.daumcdn.net/cfile/blog/20252F1D4A2399AB2B" />
+                        </div>
+                        <div>
+                            <div class="btn-removeimg">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <img src="https://t1.daumcdn.net/cfile/blog/20252F1D4A2399AB2B" />
+                        </div>
+                        <div>
+                            <div class="btn-removeimg">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <img src="https://t1.daumcdn.net/cfile/blog/20252F1D4A2399AB2B" />
+                        </div>
+                        <div>
+                            <div class="btn-removeimg">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <img src="https://t1.daumcdn.net/cfile/blog/20252F1D4A2399AB2B" />
+                        </div>
+                        <div>
+                            <div class="btn-removeimg">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <img src="https://t1.daumcdn.net/cfile/blog/20252F1D4A2399AB2B" />
+                        </div>
+                        <div>
+                            <div class="btn-removeimg">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <img src="https://t1.daumcdn.net/cfile/blog/20252F1D4A2399AB2B" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">성별</span>
+                <input value="여성" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">생년월일</span>
+                <input value="1981-06-15 (41세)" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">키</span>
+                <input value="160cm" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">체형</span>
+                <input value="날씬함" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">학력</span>
+                <input value="대졸" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">학교명</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">직업</span>
+                <input value="프리랜서" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">직장이름</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">직장이름</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">종교</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">음주</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">흡연</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">성격</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">혈액형</span>
+                <input value="-" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">회원등급</span>
+                <div class="update-box">
+                    <select>
+                        <option>실버</option>
+                        <option>골드</option>
+                        <option>플래티넘</option>
+                        <option>다이아몬드</option>
+                    </select>
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">회원등급 점수</span>
+                <div class="update-box">
+                    <input type="number" />
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">로얄회원 여부</span>
+                <div class="update-box">
+                    <select>
+                        <option>예</option>
+                        <option>아니오</option>
+                    </select>
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">VIP회원 여부</span>
+                <select disabled>
+                    <option>예</option>
+                    <option>아니오</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">10스타 배지</span>
+                <div class="update-box">
+                    <select>
+                        <option>예</option>
+                        <option>아니오</option>
+                    </select>
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">첫인사 메세지</span>
+                <textarea disabled style="height: 80px;"></textarea>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">보유 포인트</span>
+                <div class="update-box">
+                    <input type="number" />
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">매력율</span>
+                <div class="update-box">
+                    <input type="number" />
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">응답율</span>
+                <div class="update-box">
+                    <input type="number" />
+                    <button class="active">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">매력포인트</span>
+                <div class="sub-point-box">
+                    <span>몸매</span>
+                    <span>얼굴</span>
+                    <span>섹시한 몸짓</span>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">관심사</span>
+                <div class="sub-point-box">
+                    <span>몸매</span>
+                    <span>얼굴</span>
+                    <span>섹시한 몸짓</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

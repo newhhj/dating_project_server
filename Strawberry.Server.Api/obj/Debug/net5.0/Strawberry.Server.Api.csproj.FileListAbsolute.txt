@@ -1,0 +1,121 @@
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\appsettings.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\appsettings.Production.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Certification\strawberrylove.co.kr.pfx
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\GoogleResources\com.strawberry.mobileapp.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.exe
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.deps.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.runtimeconfig.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.runtimeconfig.dev.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.pdb
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\FirebaseAdmin.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Geolocation.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Google.Api.Gax.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Google.Api.Gax.Rest.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.Auth.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.Core.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Humanizer.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\MySqlConnector.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\NetTopologySuite.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.Design.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.NetTopologySuite.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Database.pdb
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.csproj.AssemblyReference.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.AssemblyInfoInputs.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.AssemblyInfo.cs
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.csproj.CoreCompileInputs.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\scopedcss\bundle\Strawberry.Server.Api.styles.css
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\Strawberry.Server.Api.StaticWebAssets.Manifest.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\Strawberry.Server.Api.StaticWebAssets.Pack.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.Strawberry.Server.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.build.Strawberry.Server.Api.props
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Strawberry.Server.Api.props
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Strawberry.Server.Api.props
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.RazorTargetAssemblyInfo.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.csproj.CopyComplete
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\refint\Strawberry.Server.Api.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.pdb
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.genruntimeconfig.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Api\obj\Debug\net5.0\ref\Strawberry.Server.Api.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\appsettings.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\appsettings.Production.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Certification\strawberrylove.co.kr.pfx
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\GoogleResources\com.strawberry.mobileapp.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.exe
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.deps.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.runtimeconfig.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.runtimeconfig.dev.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.pdb
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\FirebaseAdmin.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Geolocation.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Google.Api.Gax.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Google.Api.Gax.Rest.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.Auth.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Google.Apis.Core.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Humanizer.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\MySqlConnector.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\NetTopologySuite.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.Design.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.NetTopologySuite.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Database.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Database.pdb
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.csproj.AssemblyReference.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.AssemblyInfoInputs.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.AssemblyInfo.cs
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.csproj.CoreCompileInputs.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\Strawberry.Server.Api.StaticWebAssets.Manifest.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\scopedcss\bundle\Strawberry.Server.Api.styles.css
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.RazorTargetAssemblyInfo.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.csproj.CopyComplete
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\ref\Strawberry.Server.Api.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.pdb
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\Strawberry.Server.Api.genruntimeconfig.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\bin\Debug\net5.0\Strawberry.Server.Api.StaticWebAssets.xml
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\Strawberry.Server.Api.StaticWebAssets.Pack.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.Strawberry.Server.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.build.Strawberry.Server.Api.props
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Strawberry.Server.Api.props
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Strawberry.Server.Api.props
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Api\obj\Debug\net5.0\refint\Strawberry.Server.Api.dll

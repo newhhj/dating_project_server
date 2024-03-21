@@ -1,0 +1,1204 @@
+/* _content/Strawberry.Server.Manager/Pages/AD/ADDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-9g78uvet85] {
+    margin-top: 16px;
+}
+
+.row-box input[b-9g78uvet85],
+.row-box select[b-9g78uvet85],
+.row-box textarea[b-9g78uvet85] {
+    width: 100%;
+}
+
+.img-box[b-9g78uvet85] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-9g78uvet85] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-9g78uvet85] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-9g78uvet85] {
+    margin-right: initial;
+}
+
+.img-box img[b-9g78uvet85] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-9g78uvet85] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-9g78uvet85] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-9g78uvet85] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-9g78uvet85] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-9g78uvet85] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-9g78uvet85] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-9g78uvet85] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-9g78uvet85] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-9g78uvet85] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+
+.comment-box[b-9g78uvet85] {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.comment-box > span:nth-of-type(1)[b-9g78uvet85] {
+    flex-basis: 100px;
+    font-weight: bold;
+    max-width: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.comment-box > i:nth-of-type(1)[b-9g78uvet85] {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* _content/Strawberry.Server.Manager/Pages/AD/ADList.razor.rz.scp.css */
+span.content[b-vtugy7r9j2] {
+    max-width: 320px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* _content/Strawberry.Server.Manager/Pages/Alert/AlertDetail.razor.rz.scp.css */
+input[b-i9zq3rgatd] {
+    width: 100%;
+}
+
+textarea[b-i9zq3rgatd] {
+    width: 100%;
+}
+
+.row-box:nth-child(n+2)[b-i9zq3rgatd] {
+    margin-top: 12px;
+}
+/* _content/Strawberry.Server.Manager/Pages/Alert/AlertList.razor.rz.scp.css */
+input[type=radio][b-1cdc8ouq5t] {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=radio]+label[b-1cdc8ouq5t] {
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 20px;
+    display: inline-block;
+}
+/* _content/Strawberry.Server.Manager/Pages/BlockWord/BlockWordDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-c38ctrpcvt] {
+    margin-top: 16px;
+}
+
+.row-box input[b-c38ctrpcvt],
+.row-box select[b-c38ctrpcvt],
+.row-box textarea[b-c38ctrpcvt] {
+    width: 100%;
+}
+
+.img-box[b-c38ctrpcvt] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-c38ctrpcvt] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-c38ctrpcvt] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-c38ctrpcvt] {
+    margin-right: initial;
+}
+
+.img-box img[b-c38ctrpcvt] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-c38ctrpcvt] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-c38ctrpcvt] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-c38ctrpcvt] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-c38ctrpcvt] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-c38ctrpcvt] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-c38ctrpcvt] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-c38ctrpcvt] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-c38ctrpcvt] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-c38ctrpcvt] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+/* _content/Strawberry.Server.Manager/Pages/Caller/CallersDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-b373npip3i] {
+    margin-top: 16px;
+}
+
+.row-box input[b-b373npip3i],
+.row-box select[b-b373npip3i],
+.row-box textarea[b-b373npip3i] {
+    width: 100%;
+}
+
+.img-box[b-b373npip3i] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-b373npip3i] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-b373npip3i] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-b373npip3i] {
+    margin-right: initial;
+}
+
+.img-box img[b-b373npip3i] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-b373npip3i] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-b373npip3i] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-b373npip3i] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-b373npip3i] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-b373npip3i] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-b373npip3i] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-b373npip3i] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-b373npip3i] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-b373npip3i] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+/* _content/Strawberry.Server.Manager/Pages/Help/HelpListItem.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-1b1dcwaicd] {
+    margin-top: 16px;
+}
+
+.row-box input[b-1b1dcwaicd],
+.row-box select[b-1b1dcwaicd],
+.row-box textarea[b-1b1dcwaicd] {
+    width: 100%;
+}
+
+.img-box[b-1b1dcwaicd] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-1b1dcwaicd] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-1b1dcwaicd] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-1b1dcwaicd] {
+    margin-right: initial;
+}
+
+.img-box img[b-1b1dcwaicd] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-1b1dcwaicd] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-1b1dcwaicd] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-1b1dcwaicd] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-1b1dcwaicd] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-1b1dcwaicd] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-1b1dcwaicd] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-1b1dcwaicd] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-1b1dcwaicd] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-1b1dcwaicd] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+/* _content/Strawberry.Server.Manager/Pages/Index/Setting.razor.rz.scp.css */
+.label-title[b-0fnrugpds9] {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 5px 10px;
+}
+
+.label-name[b-0fnrugpds9] {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.label-name > span[b-0fnrugpds9] {
+    font-size: 11px;
+    color: #FF4A57;
+}
+
+.context-box[b-0fnrugpds9] {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button.accept[b-0fnrugpds9] {
+    background-color: #4A9CFF;
+    color: #ffffff;
+    display: block;
+}
+
+textarea[b-0fnrugpds9] {
+    width: 100%;
+    height: 320px;
+}
+/* _content/Strawberry.Server.Manager/Pages/Login/Login.razor.rz.scp.css */
+div.login-pannel[b-l1qhkzgrjk] {
+    display: flex;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box[b-l1qhkzgrjk] {
+    width: 240px;
+    padding: 10px;
+    border: 1px solid #4A9CFF;
+    border-radius: 10px;
+}
+
+div.login-box h2[b-l1qhkzgrjk] {
+    text-align: center;
+    color: #4a9cff;
+}
+
+.login-box > span[b-l1qhkzgrjk] {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-box > input[b-l1qhkzgrjk] {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid #4A9CFF;
+    border-radius: 5px;
+    outline-color: #4A9CFF;
+}
+
+.login-box > button[b-l1qhkzgrjk] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4A9CFF;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    outline-color: #4A9CFF;
+}
+/* _content/Strawberry.Server.Manager/Pages/LoveFortune/LoveFortuneDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-4wsqkyr5o2] {
+    margin-top: 16px;
+}
+
+.row-box input[b-4wsqkyr5o2],
+.row-box select[b-4wsqkyr5o2],
+.row-box textarea[b-4wsqkyr5o2] {
+    width: 100%;
+}
+
+.img-box[b-4wsqkyr5o2] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-4wsqkyr5o2] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-4wsqkyr5o2] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-4wsqkyr5o2] {
+    margin-right: initial;
+}
+
+.img-box img[b-4wsqkyr5o2] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-4wsqkyr5o2] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-4wsqkyr5o2] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-4wsqkyr5o2] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-4wsqkyr5o2] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-4wsqkyr5o2] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-4wsqkyr5o2] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-4wsqkyr5o2] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-4wsqkyr5o2] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-4wsqkyr5o2] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+/* _content/Strawberry.Server.Manager/Pages/Manager/ManagerListItem.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-8vvnyovk3j] {
+    margin-top: 16px;
+}
+
+.row-box input[b-8vvnyovk3j],
+.row-box select[b-8vvnyovk3j],
+.row-box textarea[b-8vvnyovk3j] {
+    width: 100%;
+}
+
+.img-box[b-8vvnyovk3j] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-8vvnyovk3j] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-8vvnyovk3j] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-8vvnyovk3j] {
+    margin-right: initial;
+}
+
+.img-box img[b-8vvnyovk3j] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-8vvnyovk3j] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-8vvnyovk3j] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-8vvnyovk3j] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-8vvnyovk3j] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-8vvnyovk3j] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-8vvnyovk3j] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-8vvnyovk3j] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-8vvnyovk3j] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-8vvnyovk3j] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+/* _content/Strawberry.Server.Manager/Pages/Member/MemberDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-gw8r2rpfl0] {
+    margin-top: 16px;
+}
+
+.row-box input[b-gw8r2rpfl0],
+.row-box select[b-gw8r2rpfl0],
+.row-box textarea[b-gw8r2rpfl0] {
+    width: 100%;
+}
+
+.img-box[b-gw8r2rpfl0] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-gw8r2rpfl0] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-gw8r2rpfl0] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-gw8r2rpfl0] {
+    margin-right: initial;
+}
+
+.img-box img[b-gw8r2rpfl0] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-gw8r2rpfl0] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-gw8r2rpfl0] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-gw8r2rpfl0] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-gw8r2rpfl0] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-gw8r2rpfl0] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-gw8r2rpfl0] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-gw8r2rpfl0] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-gw8r2rpfl0] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #4a9cff;
+    color: #ffffff;
+    margin-right: 4px;
+}
+/* _content/Strawberry.Server.Manager/Pages/PoomPoom/PoomPoomDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-uxrbizmvob] {
+    margin-top: 16px;
+}
+
+.row-box input[b-uxrbizmvob],
+.row-box select[b-uxrbizmvob],
+.row-box textarea[b-uxrbizmvob] {
+    width: 100%;
+}
+
+.img-box[b-uxrbizmvob] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-uxrbizmvob] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-uxrbizmvob] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-uxrbizmvob] {
+    margin-right: initial;
+}
+
+.img-box img[b-uxrbizmvob] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-uxrbizmvob] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-uxrbizmvob] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-uxrbizmvob] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-uxrbizmvob] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-uxrbizmvob] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-uxrbizmvob] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-uxrbizmvob] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-uxrbizmvob] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-uxrbizmvob] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+
+.comment-box[b-uxrbizmvob] {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.comment-box > span:nth-of-type(1)[b-uxrbizmvob] {
+    flex-basis: 100px;
+    font-weight: bold;
+    max-width: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.comment-box > i:nth-of-type(1)[b-uxrbizmvob] {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* _content/Strawberry.Server.Manager/Pages/PoomPoom/PoomPooms.razor.rz.scp.css */
+span.content[b-cfv06qq4x9] {
+    max-width: 320px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* _content/Strawberry.Server.Manager/Pages/RequestRoyal/RequestRoyalDetail.razor.rz.scp.css */
+.row-box:nth-child(n+2)[b-i6ffrfhjnq] {
+    margin-top: 16px;
+}
+
+.row-box input[b-i6ffrfhjnq],
+.row-box select[b-i6ffrfhjnq],
+.row-box textarea[b-i6ffrfhjnq] {
+    width: 100%;
+}
+
+.img-box[b-i6ffrfhjnq] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-i6ffrfhjnq] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-i6ffrfhjnq] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-i6ffrfhjnq] {
+    margin-right: initial;
+}
+
+.img-box img[b-i6ffrfhjnq] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-i6ffrfhjnq] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-i6ffrfhjnq] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-i6ffrfhjnq] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-i6ffrfhjnq] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-i6ffrfhjnq] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-i6ffrfhjnq] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-i6ffrfhjnq] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-i6ffrfhjnq] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-i6ffrfhjnq] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+/* _content/Strawberry.Server.Manager/Shared/LoginLayout.razor.rz.scp.css */
+div.top-bar[b-2g83kdhn60] {
+    display: flex;
+    height: 50px;
+    background-color: #4A9CFF90;
+}
+
+.top-bar-title[b-2g83kdhn60] {
+    flex-basis: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4A9CFF;
+}
+/* _content/Strawberry.Server.Manager/Shared/MainLayout.razor.rz.scp.css */
+div.top-bar[b-mfwriva1hg] {
+    display: flex;
+    height: 50px;
+    background-color: #4a9cff21;
+}
+
+.top-bar-title[b-mfwriva1hg] {
+    flex-basis: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4A9CFF;
+}
+
+.top-bar-body[b-mfwriva1hg] {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+    color: #3670B6;
+}
+
+.top-bar-option[b-mfwriva1hg] {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10px;
+    color: #3670B6;
+}
+
+.top-bar-option .btn-logout[b-mfwriva1hg] {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-option .btn-logout > i[b-mfwriva1hg] {
+    margin-right: 5px;
+}
+
+.body-box[b-mfwriva1hg] {
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
+
+.page-box[b-mfwriva1hg] {
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* _content/Strawberry.Server.Manager/Shared/NavMenu.razor.rz.scp.css */
+.menu-box[b-m5hkxupxk5] {
+    flex-basis: 200px;
+    min-height: 100%;
+    background-color: #4a9cff21;
+}
+
+.menu-box .menu-item[b-m5hkxupxk5] {
+    display: flex;
+    height: 40px;
+    box-sizing: border-box;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    color: #3670B6;
+    padding: 0 10px;
+    border-left: 5px solid transparent;
+}
+
+.menu-box .active > .menu-item[b-m5hkxupxk5] {
+    background-color: #4A9CFF;
+    color: #ffffff;
+    border-left: 5px solid #3670B6;
+}
+
+.menu-box i[b-m5hkxupxk5] {
+    text-align: center;
+    width: 30px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.menu-box .spliter[b-m5hkxupxk5] {
+    display: block;
+    height: 1px;
+    background-color: #bbdaff;
+    margin: 0 10px;
+}

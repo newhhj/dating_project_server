@@ -1,0 +1,132 @@
+.row-box:nth-child(n+2)[b-9g78uvet85] {
+    margin-top: 16px;
+}
+
+.row-box input[b-9g78uvet85],
+.row-box select[b-9g78uvet85],
+.row-box textarea[b-9g78uvet85] {
+    width: 100%;
+}
+
+.img-box[b-9g78uvet85] {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.img-box > div[b-9g78uvet85] {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 100%;
+}
+
+.img-box > div > div[b-9g78uvet85] {
+    margin-right: 5px;
+}
+
+.img-box > div > div:last-child[b-9g78uvet85] {
+    margin-right: initial;
+}
+
+.img-box img[b-9g78uvet85] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-removeimg[b-9g78uvet85] {
+    height: 0;
+    overflow: visible;
+    text-align: right;
+}
+
+.btn-removeimg > button[b-9g78uvet85] {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #c42727;
+    margin: 4px;
+}
+
+button[b-9g78uvet85] {
+    background-color: #4a9cff;
+    color: #ffffff;
+    padding: 0;
+}
+
+.update-box[b-9g78uvet85] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.update-box > *:first-child[b-9g78uvet85] {
+    flex-grow: 1;
+}
+
+.update-box > *:last-child[b-9g78uvet85] {
+    flex-basis: 30px;
+    margin-left: 5px;
+}
+
+.sub-point-box[b-9g78uvet85] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-point-box span[b-9g78uvet85] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sub-point-box span.active[b-9g78uvet85] {
+    background-color: #4a9cff;
+    color: #ffffff;
+}
+
+.comment-box[b-9g78uvet85] {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.comment-box > span:nth-of-type(1)[b-9g78uvet85] {
+    flex-basis: 100px;
+    font-weight: bold;
+    max-width: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.comment-box > i:nth-of-type(1)[b-9g78uvet85] {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}

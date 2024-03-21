@@ -1,0 +1,145 @@
+﻿@page "/memberlevellist"
+@layout MainLayout
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">요청 목록</span>
+    <div class="context-box">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        닉네임
+                    </th>
+                    <th>
+                        성별
+                    </th>
+                    <th>
+                        등급
+                    </th>
+                    <th>
+                        VIP
+                    </th>
+                    <th>
+                        로얄
+                    </th>
+                    <th>
+                        상태
+                    </th>
+                    <th>
+                        가입일
+                    </th>
+                    <th>
+                        -
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (this.Items == null || this.Items.Length == 0)
+                {
+                    <tr>
+                        <td colspan="8">
+                            <div class="no-list">
+                                표시할 목록이 없습니다.
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in this.Items)
+                    {
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; cursor: pointer;" @onclick="() => { this.OpenDetail(item); }">
+                                    @item.Nickname
+                                </span>
+                            </td>
+                            <td>
+                                @(item.Gender == Database.GenderTypes.Male ? "남성" : "여성")
+                            </td>
+                            <td>
+                                @switch (item.LevelType)
+                                {
+                                    case Database.LevelTypes.Platinum:
+                                        <span>플래티넘</span>
+                                        break;
+                                    case Database.LevelTypes.Diamond:
+                                        <span>다이아몬드</span>
+                                        break;
+                                    case Database.LevelTypes.Gold:
+                                        <span>골드</span>
+                                        break;
+                                    case Database.LevelTypes.Silver:
+                                        <span>실버</span>
+                                        break;
+                                    default:
+                                        <span>-</span>
+                                        break;
+                                }
+                            </td>
+                            <td>
+                                @(item.IsVIP ? "VIP" : "-")
+                            </td>
+                            <td>
+                                @(item.IsRoyal ? "Royal" : "-")
+                            </td>
+                            <td>
+                                @switch (item.MemberState)
+                                {
+                                    case Database.MemberStateTypes.Normal:
+                                        <span>일반</span>
+                                        break;
+                                    case Database.MemberStateTypes.Block:
+                                        <span>차단</span>
+                                        break;
+                                    case Database.MemberStateTypes.JoinConfirm:
+                                        <span>가입승인</span>
+                                        break;
+                                    case Database.MemberStateTypes.JoinWait:
+                                        <span>가입대기</span>
+                                        break;
+                                    case Database.MemberStateTypes.JoinDeny:
+                                        <span>가입반려</span>
+                                        break;
+                                    default:
+                                        <span>-</span>
+                                        break;
+                                }
+                            </td>
+                            <td>
+                                @item.CreateTime.ToString("yyyy.MM.dd")
+                            </td>
+                            <td>
+                                <button style="background-color: #4a9cff; color: #ffffff;" @onclick="() => { this.CompleteItem(item); }">처리완료</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">
+                        <div class="pager">
+                            <btn @onclick="() => { this.Page--; this.MovePage(); }">
+                                <i class="fas fa-chevron-left"></i>
+                            </btn>
+                            <input type="number" @bind="this.Page" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") this.MovePage(); }'/>
+                            <span>/ @this.TotalPageCount.ToString("#,##0")</span>
+                            <btn @onclick="() => { this.Page++; this.MovePage(); }">
+                                <i class="fas fa-chevron-right"></i>
+                            </btn>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}

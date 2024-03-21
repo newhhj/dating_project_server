@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+이 파일은 웹 프로젝트의 게시/패키지 프로세스에서 사용됩니다. 이 MSBuild 파일을 편집하여 이 프로세스의 동작을
+사용자 지정할 수 있습니다. 이에 대한 자세한 내용은 https://go.microsoft.com/fwlink/?LinkID=208121을 참조하세요. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW2fXyeFgkUG86vrshNBNtgAAAAACAAAAAAAQZgAAAAEAACAAAADXF5x8/auEyFEgEDw8rpOJeLxqMjkEBy2nh0FpIQ9O6gAAAAAOgAAAAAIAACAAAAColot3uib8npyRJ6mz0TimFuvzvPzQezt1rA4tJnsbGiAAAAC5Hhc3fH879dYFHrwGOa+TFqOeFRTo0v0BoY2XOqpO00AAAAAgSL3qONdeUj1UNuc+W6sHv/j/cpgn33ngPyFOM0Srib73C1iZsGJNVPSp8C2/PSu6RScBd4rscAiyZMAmX9Fg</EncryptedPassword>
+    <_PublishTargetUrl>ftp://175.125.94.223/Strawberry.Server.Manager</_PublishTargetUrl>
+    <History>True|2022-11-26T11:57:39.3126331Z;True|2022-11-24T19:19:13.5212019+09:00;True|2022-11-23T19:25:09.7883065+09:00;True|2022-11-23T19:24:48.2866261+09:00;False|2022-11-23T19:24:27.2212838+09:00;True|2022-11-23T19:23:49.3329871+09:00;False|2022-11-23T19:23:32.4938311+09:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>11/18/2021 21:19:52</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>11/18/2021 21:19:58</publishTime>
+    </File>
+    <File Include="appsettings.Production.json">
+      <publishTime>11/18/2022 22:34:56</publishTime>
+    </File>
+    <File Include="Certification/strawberrylove.co.kr.pfx">
+      <publishTime>10/25/2021 11:06:22</publishTime>
+    </File>
+    <File Include="FirebaseAdmin.dll">
+      <publishTime>06/18/2021 00:58:12</publishTime>
+    </File>
+    <File Include="Google.Api.Gax.dll">
+      <publishTime>09/24/2020 21:17:24</publishTime>
+    </File>
+    <File Include="Google.Api.Gax.Rest.dll">
+      <publishTime>09/24/2020 21:17:30</publishTime>
+    </File>
+    <File Include="Google.Apis.Auth.dll">
+      <publishTime>08/18/2020 01:08:56</publishTime>
+    </File>
+    <File Include="Google.Apis.Auth.PlatformServices.dll">
+      <publishTime>08/18/2020 01:09:04</publishTime>
+    </File>
+    <File Include="Google.Apis.Core.dll">
+      <publishTime>08/18/2020 01:08:52</publishTime>
+    </File>
+    <File Include="Google.Apis.dll">
+      <publishTime>08/18/2020 01:08:52</publishTime>
+    </File>
+    <File Include="GoogleResources/com.strawberry.mobileapp.json">
+      <publishTime>10/19/2021 21:36:22</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>10/30/2021 03:40:00</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>09/13/2019 11:28:44</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>05/14/2021 03:31:38</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>05/14/2021 03:31:54</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.Design.dll">
+      <publishTime>02/17/2017 17:01:04</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>05/14/2021 03:31:58</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>11/26/2020 10:59:12</publishTime>
+    </File>
+    <File Include="MySqlConnector.dll">
+      <publishTime>06/17/2021 00:06:24</publishTime>
+    </File>
+    <File Include="NetTopologySuite.dll">
+      <publishTime>03/10/2021 11:37:06</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 09:56:44</publishTime>
+    </File>
+    <File Include="Pomelo.EntityFrameworkCore.MySql.Design.dll">
+      <publishTime>05/06/2017 12:09:14</publishTime>
+    </File>
+    <File Include="Pomelo.EntityFrameworkCore.MySql.dll">
+      <publishTime>06/27/2021 21:49:28</publishTime>
+    </File>
+    <File Include="Pomelo.EntityFrameworkCore.MySql.NetTopologySuite.dll">
+      <publishTime>06/27/2021 21:49:40</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Database.dll">
+      <publishTime>11/26/2022 20:56:30</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Database.pdb">
+      <publishTime>11/26/2022 20:56:30</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.deps.json">
+      <publishTime>11/26/2022 20:57:26</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.dll">
+      <publishTime>11/26/2022 20:57:25</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.exe">
+      <publishTime>11/26/2022 20:57:25</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.pdb">
+      <publishTime>11/26/2022 20:57:25</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.runtimeconfig.json">
+      <publishTime>11/26/2022 20:57:27</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.Views.dll">
+      <publishTime>11/26/2022 20:57:26</publishTime>
+    </File>
+    <File Include="Strawberry.Server.Manager.Views.pdb">
+      <publishTime>11/26/2022 20:57:26</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>12/12/2020 11:40:42</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>11/26/2022 20:57:36</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>03/14/2022 14:03:36</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>10/29/2021 07:16:18</publishTime>
+    </File>
+    <File Include="wwwroot/jquery/jquery.js">
+      <publishTime>03/14/2022 16:31:00</publishTime>
+    </File>
+    <File Include="wwwroot/jquery/jquery.min.js">
+      <publishTime>03/14/2022 16:31:00</publishTime>
+    </File>
+    <File Include="wwwroot/jquery/jquery.min.map">
+      <publishTime>03/14/2022 16:31:00</publishTime>
+    </File>
+    <File Include="wwwroot/jquery/jquery.slim.js">
+      <publishTime>10/30/2021 03:40:02</publishTime>
+    </File>
+    <File Include="wwwroot/jquery/jquery.slim.min.js">
+      <publishTime>10/30/2021 03:40:02</publishTime>
+    </File>
+    <File Include="wwwroot/jquery/jquery.slim.min.map">
+      <publishTime>10/30/2021 03:40:02</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>01/06/2022 06:40:00</publishTime>
+    </File>
+    <File Include="wwwroot/Strawberry.Server.Manager.styles.css">
+      <publishTime>11/26/2022 20:57:26</publishTime>
+    </File>
+    <File Include="wwwroot/template.html">
+      <publishTime>11/01/2021 09:40:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

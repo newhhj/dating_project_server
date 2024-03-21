@@ -1,0 +1,120 @@
+﻿@page "/imageconfirm"
+@layout MainLayout
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">컨텐츠 목록</span>
+    <div class="context-box">
+        <div class="filter-box">
+            <div class="filter-item">
+                <span class="label-name" style="margin-left:10px;">타입</span>
+                <select @bind="this.ImageType" @bind:event="oninput" @onchange="() => { this.Page = 1; this.MovePage(); }">
+                    <option value="">전체</option>
+                    <option value="@Database.ConfirmImageTypes.ProfileImage">프로필</option>
+                    <option value="@Database.ConfirmImageTypes.PoomPoomImage">뿜뿜</option>
+                </select>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th style="width: 150px;">
+                        닉네임
+                    </th>
+                    <th style="width: 100px;">
+                        타입
+                    </th>
+                    <th>
+                        이미지
+                    </th>
+                    <th style="width: 200px;">
+                        등록일
+                    </th>
+                    <th style="width: 150px;">
+                        -
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (this.Items == null || this.Items.Length == 0)
+                {
+                    <tr>
+                        <td colspan="5">
+                            <div class="no-list">
+                                표시할 목록이 없습니다.
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in this.Items)
+                    {
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; cursor: pointer;" @onclick="() => { this.OpenOwnerDetail(item); }">
+                                    @item.Nickname
+                                </span>
+                            </td>
+                            <td>
+                                @switch (item.ImageType)
+                                {
+                                    case Database.ConfirmImageTypes.ProfileImage:
+                                        <span>프로필</span>
+                                        break;
+                                    case Database.ConfirmImageTypes.PoomPoomImage:
+                                        <span>뿜뿜</span>
+                                        break;
+                                    default:
+                                        <span>-</span>
+                                        break;
+                                }
+                            </td>
+                            <td>
+                                @if (string.IsNullOrWhiteSpace(item.ImageUrl))
+                                {
+                                    <span>-</span>
+                                }
+                                else
+                                {
+                                    <img src="@item.ImageUrl" @onclick="() =>{ this.OpenDetail(item); }" style="height: 100px;vertical-align: middle;margin: 5px 0;border-radius: 5px;cursor: pointer;" />
+                                }
+                            </td>
+                            <td>
+                                @item.CreateTime.ToString("yyyy.MM.dd")
+                            </td>
+                            <td>
+                                <button style="background-color: #4A9CFF; color: #ffffff;" @onclick="async () => { await this.AcceptItemAsync(item); }">승인</button>
+                                <button style="background-color: #e11b1b; color: #ffffff;" @onclick="async () => { await this.DenyItemAsync(item); }">거부</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="pager">
+                            <btn @onclick="() => { this.Page--; this.MovePage(); }">
+                                <i class="fas fa-chevron-left"></i>
+                            </btn>
+                            <input type="number" @bind="this.Page" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") this.MovePage(); }' />
+                            <span>/ @this.TotalPageCount.ToString("#,##0")</span>
+                            <btn @onclick="() => { this.Page++; this.MovePage(); }">
+                                <i class="fas fa-chevron-right"></i>
+                            </btn>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}

@@ -1,0 +1,24 @@
+﻿@page "/logout"
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@{
+    Layout = null;
+    await this.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+}
+
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>딸기 관리자</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        window.onload = () => {
+            location.href = "/login";
+        }
+    </script>
+</body>
+</html>

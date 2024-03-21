@@ -1,0 +1,39 @@
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.deps.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\bin\Release\net5.0\ref\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.pdb
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.csproj.AssemblyReference.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.AssemblyInfoInputs.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.AssemblyInfo.cs
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.csproj.CoreCompileInputs.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\EFCoreMySqlNetTopologySuite.cs
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\ref\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 (2)\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.pdb
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.deps.json
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\bin\Release\net5.0\ref\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.pdb
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.csproj.AssemblyReference.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.AssemblyInfoInputs.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.AssemblyInfo.cs
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.csproj.CoreCompileInputs.cache
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\EFCoreMySqlNetTopologySuite.cs
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\ref\Strawberry.Server.Database.dll
+D:\외주\만두딸기\2022.11.13. 제공하 소스파일 일체\1번째 개발자\Strawberry 2022.03.17 - 복사본\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.pdb
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.deps.json
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\bin\Release\net5.0\Strawberry.Server.Database.pdb
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.csproj.AssemblyReference.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.AssemblyInfoInputs.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.AssemblyInfo.cs
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.csproj.CoreCompileInputs.cache
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\EFCoreMySqlNetTopologySuite.cs
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\refint\Strawberry.Server.Database.dll
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\Strawberry.Server.Database.pdb
+D:\1.SourceXamarin\Strawberry\Strawberry.Server.Database\obj\Release\net5.0\ref\Strawberry.Server.Database.dll

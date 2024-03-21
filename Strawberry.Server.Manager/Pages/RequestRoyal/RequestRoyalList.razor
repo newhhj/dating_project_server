@@ -1,0 +1,102 @@
+﻿@page "/requestroyallist"
+@layout MainLayout
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">로얄인증 신청목록</span>
+    <div class="context-box">
+        <div class="filter-box">
+            <div class="filter-item">
+                <span class="label-name" style="margin-left:10px;">구분</span>
+                <select @onchange="(e) => { this.MovePage(1, e.Value, this.IsComplete); }">
+                    <option value="">전체</option>
+                    <option value="@false.ToString()">일반요청</option>
+                    <option value="@true.ToString()">빠른요청</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <span class="label-name" style="margin-left:10px;">상태</span>
+                <select @onchange="(e) => { this.MovePage(1, this.IsFastWork, e.Value); }">
+                    <option value="">전체</option>
+                    <option value="@false.ToString()">처리중</option>
+                    <option value="@true.ToString()">완료</option>
+                </select>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        요청자
+                    </th>
+                    <th>
+                        구분
+                    </th>
+                    <th>
+                        상태
+                    </th>
+                    <th style="width: 200px;">
+                        등록일
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (this.Items == null || this.Items.Length == 0)
+                {
+                    <tr>
+                        <td colspan="4">
+                            <div class="no-list">
+                                표시할 목록이 없습니다.
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in this.Items)
+                    {
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; cursor: pointer;" @onclick="() => { this.OpenDetail(item); }">
+                                    @item.Member.Nickname
+                                </span>
+                            </td>
+                            <td>
+                                @(item.IsFastWork ? "빠른요청" : "일반요청")
+                            </td>
+                            <td>
+                                @(item.IsComplete ? "완료" : "처리중")
+                            </td>
+                            <td>
+                                @item.CreateTime.ToString("yyyy.MM.dd")
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <div class="pager">
+                            <btn @onclick="() => { this.MovePage(this.Page - 1, this.IsFastWork, this.IsComplete); }">
+                                <i class="fas fa-chevron-left"></i>
+                            </btn>
+                            <input type="number" @bind="this.Page" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") this.MovePage(this.Page, this.IsFastWork, this.IsComplete); }'/>
+                            <span>/ @this.TotalPageCount.ToString("#,##0")</span>
+                            <btn @onclick="() => { this.MovePage(this.Page + 1, this.IsFastWork, this.IsComplete); }">
+                                <i class="fas fa-chevron-right"></i>
+                            </btn>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}

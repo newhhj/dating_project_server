@@ -1,0 +1,72 @@
+﻿@page "/setting"
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">관리자 정보 수정</span>
+    <div class="context-box">
+        @if (!this.SettingItem.UseUpdateAdminId)
+        {
+            <span class="label-name">아이디 <span>(최초 아이디는 반드시 변경해야 합니다.)</span> </span>
+            <input style="margin-bottom: 10px;" placeholder="변경할 아이디를 입력하세요." @bind="this.NewAdminId" />
+        }
+        <span class="label-name">현재 비밀번호</span>
+        <input style="margin-bottom: 10px;" type="password" placeholder="비밀번호를 입력하세요." @bind="this.CurrentPasswd" />
+        <span class="label-name">새 비밀번호</span>
+        <input style="margin-bottom: 10px;" type="password" placeholder="비밀번호를 입력하세요." @bind="this.NewPasswd" />
+        <span class="label-name">비밀번호 확인</span>
+        <input style="margin-bottom: 10px;" type="password" placeholder="비밀번호를 입력하세요." @bind="this.RePasswd" />
+        <button class="accept" style="margin-top: 10px; width: 240px;" @onclick="AcceptAccount">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">문의 수신 메일</span>
+    <div class="context-box">
+        <span class="label-name">이메일</span>
+        <input style="margin-bottom: 10px;" placeholder="이메일 주소를 입력하세요." type="email" @bind="this.SettingItem.ManagerEmail" />
+        <button class="accept" style="margin-top: 10px; width: 240px;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">이용약관</span>
+    <div class="context-box">
+        <textarea placeholder="약관 내용을 입력하세요." @bind="this.SettingItem.UseTerm"></textarea>
+        <button class="accept" style="margin-top: 10px; width: 100%;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">개인정보 취급약관</span>
+    <div class="context-box">
+        <textarea placeholder="약관 내용을 입력하세요." @bind="this.SettingItem.PrivacyTerm"></textarea>
+        <button class="accept" style="margin-top: 10px; width: 100%;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">위치기반 서비스 이용약관</span>
+    <div class="context-box">
+        <textarea placeholder="약관 내용을 입력하세요." @bind="this.SettingItem.LocationTerm"></textarea>
+        <button class="accept" style="margin-top: 10px; width: 100%;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">민감정보 취급약관</span>
+    <div class="context-box">
+        <textarea placeholder="약관 내용을 입력하세요." @bind="this.SettingItem.SensitiveTerm"></textarea>
+        <button class="accept" style="margin-top: 10px; width: 100%;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">사용자 제작 컨텐츠 약관</span>
+    <div class="context-box">
+        <textarea placeholder="약관 내용을 입력하세요." @bind="this.SettingItem.ContentTerm"></textarea>
+        <button class="accept" style="margin-top: 10px; width: 100%;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+
+    <span class="label-title" style="margin-top: 30px;">특허저작권경고</span>
+    <div class="context-box">
+        <textarea placeholder="약관 내용을 입력하세요." @bind="this.SettingItem.PatentTerm"></textarea>
+        <button class="accept" style="margin-top: 10px; width: 100%;" @onclick="AcceptSettingItem">적용</button>
+    </div>
+}
+

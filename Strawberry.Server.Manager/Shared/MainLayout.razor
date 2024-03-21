@@ -1,0 +1,31 @@
+﻿@using System.Timers
+@inherits LayoutComponentBase
+
+@code {
+
+    
+
+    
+}
+
+<div class="top-bar">
+    <div class="top-bar-title">
+        딸기 Console
+    </div>
+    <div class="top-bar-body">
+        
+    </div>
+    <div class="top-bar-option">
+        <span class="btn-logout" onclick="logout();">
+            <i class="fas fa-sign-out-alt"></i>Logout
+        </span>
+    </div>
+</div>
+
+<div class="body-box">
+    <NavMenu/>
+
+    <div class="page-box">
+        @Body
+    </div>
+</div>

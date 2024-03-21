@@ -1,0 +1,226 @@
+﻿@page "/callersdetail/{id:int?}"
+@layout EmptyLayout
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">회원 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">닉네임</span>
+                <input @bind="this.MemberItem.Nickname" placeholder="닉네임을 입력하세요." />
+            </div>
+            <div class="row-box">
+                <span class="label-name">프로필 이미지</span>
+                <div class="img-box">
+                    <div>
+                        @if (this.MemberItem.Member_ProfileImages != null)
+                        {
+                            foreach (var item in this.MemberItem.Member_ProfileImages)
+                            {
+                                <div>
+                                    <div class="btn-removeimg">
+                                        <button @onclick="() => { this.RemoveProfileImage(item); }">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <img style="cursor: pointer;" src="@item.Url" @onclick="() => { this.OpenWindowDetailImage(item); }" />
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+                <button class="accept" style="width: 100%; margin-top: 5px;" onclick="$(this).next().click();">+</button>
+                <InputFile style="display: none;" OnChange="ImageUpload"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">성별</span>
+                <select @bind="this.MemberItem.Gender">
+                    <option value="@Database.GenderTypes.Male">남자</option>
+                    <option value="@Database.GenderTypes.Female">여자</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">생년월일</span>
+                <input @bind="this.MemberItem.BirthDay" type="date"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">키</span>
+                <input @bind="this.MemberItem.Tall" type="number" />
+            </div>
+            <div class="row-box">
+                <span class="label-name">체형</span>
+                @if (this.MemberItem.Gender == Database.GenderTypes.Male)
+                {
+                    <select @bind="this.MemberItem.BodyStyle">
+                        <option value="">==선택하세요==</option>
+                        <option value="마른">마른</option>
+                        <option value="슬림근육">슬림근육</option>
+                        <option value="보통">보통</option>
+                        <option value="근육질">근육질</option>
+                        <option value="통통">통통</option>
+                        <option value="우람">우람</option>
+                    </select>    
+                }
+                else
+                {
+                    <select @bind="this.MemberItem.BodyStyle">
+                        <option value="">==선택하세요==</option>
+                        <option value="마른">마른</option>
+                        <option value="슬림">슬림</option>
+                        <option value="보통">보통</option>
+                        <option value="다소볼륨">다소볼륨</option>
+                        <option value="글래머">글래머</option>
+                        <option value="통통">통통</option>
+                    </select>
+                }
+            </div>
+            <div class="row-box">
+                <span class="label-name">학력</span>
+                <select @bind="this.MemberItem.School">
+                    <option value="">==선택하세요==</option>
+                    <option value="고등학교">고등학교</option>
+                    <option value="전문대">전문대</option>
+                    <option value="대학교">대학교</option>
+                    <option value="석사">석사</option>
+                    <option value="석사">석사</option>
+                    <option value="박사">박사</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">직업</span>
+                <input @bind="this.MemberItem.Job" placeholder="직업을 입력하세요"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">종교</span>
+                <select @bind="this.MemberItem.Religion">
+                    <option value="">==선택하세요==</option>
+                    <option value="무교">무교</option>
+                    <option value="기독교">기독교</option>
+                    <option value="불교">불교</option>
+                    <option value="천주교">천주교</option>
+                    <option value="원불교">원불교</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">음주</span>
+                <select @bind="this.MemberItem.Alcohol">
+                    <option value="">==선택하세요==</option>
+                    <option value="안함">안함</option>
+                    <option value="가끔">가끔</option>
+                    <option value="자주">자주</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">흡연</span>
+                <select @bind="this.MemberItem.Smoking">
+                    <option value="">==선택하세요==</option>
+                    <option value="안함">안함</option>
+                    <option value="가끔">가끔</option>
+                    <option value="자주">자주</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">위도</span>
+                <input @bind="this.MemberItem.Lat" type="number"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">경도</span>
+                <input @bind="this.MemberItem.Lng" type="number"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">회원등급</span>
+                <select @bind="this.MemberItem.LevelType">
+                    <option value="@Database.LevelTypes.Silver">실버</option>
+                    <option value="@Database.LevelTypes.Gold">골드</option>
+                    <option value="@Database.LevelTypes.Platinum">플래티넘</option>
+                    <option value="@Database.LevelTypes.Diamond">다이아몬드</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">로얄회원 여부</span>
+                <select @onchange='(e) => { this.MemberItem.IsRoyal = (string)e.Value == "True"; }'>
+                    <option value="True" selected="@(this.MemberItem.IsRoyal)">예</option>
+                    <option value="False" selected="@(!this.MemberItem.IsRoyal)">아니오</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">VIP회원 여부</span>
+                <select @onchange='(e) => { this.MemberItem.IsVIP = (string)e.Value == "True"; }'>
+                    <option value="True" selected="@(this.MemberItem.IsVIP)">예</option>
+                    <option value="False" selected="@(!this.MemberItem.IsVIP)">아니오</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">스타 배지</span>
+                <select @onchange='(e) => { this.MemberItem.HasStarBadge = (string)e.Value == "True"; }'>
+                    <option value="True" selected="@(this.MemberItem.HasStarBadge)">예</option>
+                    <option value="False" selected="@(!this.MemberItem.HasStarBadge)">아니오</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">첫인사 메세지</span>
+                <textarea style="height: 80px;" @bind="this.MemberItem.FirstMessage"></textarea>
+            </div>
+            <div class="row-box">
+                <span class="label-name">매력율</span>
+                <input type="number" @bind="this.MemberItem.RateCharming" />
+            </div>
+            <div class="row-box">
+                <span class="label-name">응답율</span>
+                <input type="number" @bind="this.MemberItem.RateResponse" />
+            </div>
+
+
+            <div class="row-box">
+                <span class="label-name">매력포인트</span>
+                <div class="sub-point-box">
+                    @{
+                        var charmingItems = "1인가구/즐거운 술자리/연락이 잘되요/미소가 이뻐요/비율이 좋아요/맛집도사/다리가 예뻐요/뇌색/허세 없어요/뛰어난 커리어/운동 잘해요/춤을 잘 춰요/긍정적 마인드/소통을 잘해요/유머감각/이야기를 잘 들어줘요/목소리가 좋아요/동안이예요/예의와 매너 굿/다정해요/패션 감각/솔직해요/애교 많아요/피부가 좋아요/웃음이 많아요/털털해요/장난기가 많아요/엉덩이가 예뻐요/경제력/한 사람만 봐요/ISTJ/ISFJ/INFJ/INTJ/ISTP/ISFP/INFP/INTP/ESTP/ESFP/ENFP/ENTP/ESTJ/ESFJ/ENFJ/ENTJ".Split('/');
+                    }
+                    @foreach (var item in charmingItems)
+                    {
+                        if (this.MemberItem.Member_CharmingPoints.Any(x => x.Name == item))
+                        {
+                            <span class="active" @onclick="() => { ToggleCharmingPoint(item); }">@item</span>
+                        }
+                        else
+                        {
+                            <span @onclick="() => { ToggleCharmingPoint(item); }">@item</span>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">관심사</span>
+                <div class="sub-point-box">
+                    @{
+                        var interestItems = "즐거운 음주/영화관람/맛집탐방/진지한 만남/훈남훈녀/놀이동산/넷플릭스/음주가무/혼술/IT/봉사활동/가벼운 술자리/결혼/패션/명품/애플신상/파티/자기개발/운동 스포츠/드라이브/얼리어답터/비혼/퇴근 한잔/재혼/웹툰/지구환경/웰빙/요리/건강 헬스/친구만 원해/국내 여행/해외 여행/클럽/음악 노래/쇼핑/전시 박람/캠핑 레져/재테크/휴양지/외국어".Split('/');
+                    }
+                    @foreach (var item in interestItems)
+                    {
+                        if (this.MemberItem.Member_Interests.Any(x => x.Name == item))
+                        {
+                            <span class="active" @onclick="() => { ToggleInterest(item); }">@item</span>
+                        }
+                        else
+                        {
+                            <span @onclick="() => { ToggleInterest(item); }">@item</span>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+        <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="AcceptMemberAsync">적용</button>
+    </div>
+}

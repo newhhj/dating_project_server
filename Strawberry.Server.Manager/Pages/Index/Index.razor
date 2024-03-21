@@ -1,0 +1,13 @@
+﻿@page "/"
+@attribute [Authorize]
+@inject NavigationManager Navi
+
+@code {
+	protected override void OnAfterRender(bool firstRender)
+	{
+		if (firstRender)
+		{
+			this.Navi.NavigateTo("/setting");
+		}
+	}
+}

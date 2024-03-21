@@ -1,0 +1,250 @@
+﻿@page "/memberdetail/{id:int}"
+@layout EmptyLayout
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">회원 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">MemberCode</span>
+                <input value="@(this.MemberItem.CreateTime.ToString("yyyyMMdd") + (this.MemberItem.Gender == Database.GenderTypes.Male ? "1" : "2") + this.MemberItem.Id.ToString("000000"))" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">닉네임</span>
+                <input value="@this.MemberItem.Nickname" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">회원 상태</span>
+                <div class="update-box">
+                    <select @bind="this.MemberState">
+                        <option value="@Database.MemberStateTypes.JoinWait">가입대기</option>
+                        <option value="@Database.MemberStateTypes.JoinConfirm">가입승인</option>
+                        <option value="@Database.MemberStateTypes.JoinDeny">가입반려</option>
+                        <option value="@Database.MemberStateTypes.Normal">일반</option>
+                        <option value="@Database.MemberStateTypes.Block">차단</option>
+                    </select>
+                    <button class="active" @onclick="UpdateMemberState">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">프로필 이미지</span>
+                <div class="img-box">
+                    <div>
+                        @foreach (var item in this.MemberItem.Member_ProfileImages)
+                        {
+                            <div>
+                                <div class="btn-removeimg">
+                                    <button @onclick="() => { this.RemoveProfileImage(item); }">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <img style="cursor: pointer;" src="@item.Url" @onclick="() => { this.OpenWindowDetailImage(item); }" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">이메일</span>
+                <input value="@(this.MemberItem.Member_Account.Email ?? "-")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">전화번호</span>
+                <input value="@(this.MemberItem.Member_Account.PhoneNumber ?? "-")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">최종로그인</span>
+                <input value="@(this.MemberItem.LastLoginTime?.ToString("yyyy-MM-dd HH:mm:ss") ?? "-")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">성별</span>
+                <input value="@(this.MemberItem.Gender == Database.GenderTypes.Male ? "남성" : "여성")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">생년월일</span>
+                <input value="@this.MemberItem.BirthDay.ToString("yyyy-MM-dd")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">키</span>
+                <input value="@($"{this.MemberItem.Tall}cm")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">체형</span>
+                <input value="@this.MemberItem.BodyStyle" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">학력</span>
+                <input value="@this.MemberItem.School" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">학교명</span>
+                <input value="@this.MemberItem.SchoolName" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">직업</span>
+                <input value="@this.MemberItem.Job" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">직장이름</span>
+                <input value="@this.MemberItem.JobName" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">종교</span>
+                <input value="@this.MemberItem.Religion" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">음주</span>
+                <input value="@this.MemberItem.Alcohol" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">흡연</span>
+                <input value="@this.MemberItem.Smoking" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">성격</span>
+                <input value="@this.MemberItem.Personality" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">혈액형</span>
+                <input value="@this.MemberItem.Blood" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">평점</span>
+                <input value="@this.StarPoint.ToString("00.00")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">회원등급</span>
+                <div class="update-box">
+                    <select @bind="this.LevelType">
+                        <option value="@Database.LevelTypes.Silver">실버</option>
+                        <option value="@Database.LevelTypes.Gold">골드</option>
+                        <option value="@Database.LevelTypes.Platinum">플래티넘</option>
+                        <option value="@Database.LevelTypes.Diamond">다이아몬드</option>
+                    </select>
+                    <button class="active" @onclick="UpdateLevelType">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">회원등급 점수</span>
+                <div class="update-box">
+                    <input type="number" @bind="this.LevelPoint" />
+                    <button class="active" @onclick="UpdateLevelPoint">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">로얄회원 여부</span>
+                <div class="update-box">
+                    <select @onchange='(e) => { this.IsRoyal = (string)e.Value == "True"; }'>
+                        <option value="True" selected="@(this.IsRoyal)">예</option>
+                        <option value="False" selected="@(!this.IsRoyal)">아니오</option>
+                    </select>
+                    <button class="active" @onclick="UpdateIsRoyal">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">VIP회원 여부</span>
+                <div class="update-box">
+                    <select @onchange='(e) => { this.IsVIP = (string)e.Value == "True"; }'>
+                        <option value="True" selected="@(this.IsVIP)">예</option>
+                        <option value="False" selected="@(!this.IsVIP)">아니오</option>
+                    </select>
+                    <button class="active" @onclick="UpdateIsVIP">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">스타 배지</span>
+                <div class="update-box">
+                    <select @onchange='(e) => { this.HasStarBadge = (string)e.Value == "True"; }'>
+                        <option value="True" selected="@(this.HasStarBadge)">예</option>
+                        <option value="False" selected="@(!this.HasStarBadge)">아니오</option>
+                    </select>
+                    <button class="active" @onclick="UpdateHasStarBadge">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">첫인사 메세지</span>
+                <textarea disabled style="height: 80px;">@this.MemberItem.FirstMessage</textarea>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">보유 포인트</span>
+                <div class="update-box">
+                    <input type="number" @bind="this.Point" />
+                    <button class="active" @onclick="UpdatePoint">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">매력율</span>
+                <div class="update-box">
+                    <input type="number" @bind="this.RateCharming" />
+                    <button class="active" @onclick="UpdateRateCharming">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name" style="color: #4a9cff">응답율</span>
+                <div class="update-box">
+                    <input type="number" @bind="this.RateResponse" />
+                    <button class="active" @onclick="UpdateRateResponse">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">매력포인트</span>
+                <div class="sub-point-box">
+                    @if (this.MemberItem.Member_CharmingPoints != null && this.MemberItem.Member_CharmingPoints.Count > 0)
+                    {
+                        foreach (var item in this.MemberItem.Member_CharmingPoints)
+                        {
+                            <span>@item.Name</span>
+                        }
+                    }
+                    else
+                    {
+                        <span>-</span>
+                    }
+                </div>
+            </div>
+            <div class="row-box">
+                <span class="label-name">관심사</span>
+                <div class="sub-point-box">
+                    @if (this.MemberItem.Member_Interests != null && this.MemberItem.Member_Interests.Count > 0)
+                    {
+                        foreach (var item in this.MemberItem.Member_Interests)
+                        {
+                            <span>@item.Name</span>
+                        }
+                    }
+                    else
+                    {
+                        <span>-</span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

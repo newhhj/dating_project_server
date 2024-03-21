@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var paramText = location.href.split('?')[1];
+            var params = paramText.split('&');
+
+            var package = '';
+            var referrer = '';
+
+            for (var i = 0; i < params.length; i++) {
+                var param = params[i];
+                var data = param.split('=');
+                var key = data[0];
+                var value = data[1];
+
+                if (key.toLowerCase() === 'id') {
+                    package = value;
+                }
+                if (key.toLowerCase() === 'referrer') {
+                    referrer = value;
+                }
+            }
+
+            navigator.clipboard.writeText(referrer);
+
+            location.href = 'https://itunes.apple.com/kr/app/apple-store/' + package;
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

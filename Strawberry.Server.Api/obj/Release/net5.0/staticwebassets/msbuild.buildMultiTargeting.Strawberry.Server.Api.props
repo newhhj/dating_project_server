@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Strawberry.Server.Api.props" />
+</Project>

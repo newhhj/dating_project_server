@@ -1,0 +1,109 @@
+﻿@page "/adlist"
+@using Newtonsoft.Json
+@layout MainLayout
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">광고 목록</span>
+    <div class="context-box">
+        <div class="filter-box">
+            <div class="filter-item">
+                <span class="label-name" style="margin-left:10px;">타입</span>
+                <select @bind="this.ADType" @bind:event="oninput" @onchange="() => { this.Page = 1; this.MovePage(); }">
+                    <option value="">전체</option>
+                    <option value="@Database.ADTypes.MainPopup">메인팝업</option>
+                    <option value="@Database.ADTypes.SettingBanner">설정배너</option>
+                </select>
+            </div>
+
+            <div style="flex-grow: 1; text-align: end; padding-right: 10px;">
+                <button class="accept" style="display: inline-block;" @onclick="OpenDetail">신규등록</button>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th style="width: 100px;">
+                        타입
+                    </th>
+                    <th>
+                        광고명
+                    </th>
+                    <th style="width: 200px;">
+                        등록일
+                    </th>
+                    <th style="width: 100px;">
+                        -
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (this.Items == null || this.Items.Length == 0)
+                {
+                    <tr>
+                        <td colspan="4">
+                            <div class="no-list">
+                                표시할 목록이 없습니다.
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in this.Items)
+                    {
+                        <tr>
+                            <td>
+                                @switch (item.ADType)
+                                {
+                                    case Database.ADTypes.MainPopup:
+                                        <span>메인팝업</span>
+                                        break;
+                                    case Database.ADTypes.SettingBanner:
+                                        <span>설정배너</span>
+                                        break;
+                                    default:
+                                        <span>-</span>
+                                        break;
+                                }
+                            </td>
+                            <td>
+                                <span style="cursor: pointer; font-weight: bold;" @onclick="() => { this.OpenDetail(item); }">@item.ADName</span>
+                            </td>
+                            <td>
+                                @item.CreateTime.ToString("yyyy.MM.dd")
+                            </td>
+                            <td>
+                                <button style="background-color: #e11b1b; color: #ffffff;" @onclick="async () => { await this.RemoveItemAsync(item); }">삭제</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <div class="pager">
+                            <btn @onclick="() => { this.Page--; this.MovePage(); }">
+                                <i class="fas fa-chevron-left"></i>
+                            </btn>
+                            <input type="number" @bind="this.Page" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") this.MovePage(); }'/>
+                            <span>/ @this.TotalPageCount.ToString("#,##0")</span>
+                            <btn @onclick="() => { this.Page++; this.MovePage(); }">
+                                <i class="fas fa-chevron-right"></i>
+                            </btn>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}

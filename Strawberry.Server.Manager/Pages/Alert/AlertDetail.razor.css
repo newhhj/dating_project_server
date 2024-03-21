@@ -1,0 +1,11 @@
+﻿input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.row-box:nth-child(n+2) {
+    margin-top: 12px;
+}

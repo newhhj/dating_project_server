@@ -1,0 +1,23 @@
+﻿@page "/lovefortunedetail"
+@layout EmptyLayout
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">연애기운 문구</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">문구</span>
+                <input @bind="this.Item.Message" />
+            </div>
+        </div>
+        <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="AcceptItemAsync">등록</button>
+    </div>
+}

@@ -1,0 +1,116 @@
+﻿@page "/callers"
+@layout MainLayout
+@attribute [Authorize(Roles = "Administrator")]
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">회원 목록</span>
+    <div class="context-box">
+        <div class="filter-box">
+            <div class="filter-item">
+                <span class="label-name" style="margin-left:10px;">검색</span>
+                <div class="search">
+                    <input @bind="@this.QueryItem.Search" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") { this.QueryItem.Page = 1; this.MovePage(); } }' />
+                    <button class="accept" @onclick="() => { this.QueryItem.Page = 1; this.MovePage(); }">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div style="flex-grow: 1; text-align: end; padding-right: 10px;">
+                <button class="accept" style="display: inline-block;" @onclick="OpenDetail">신규등록</button>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        닉네임
+                    </th>
+                    <th>
+                        성별
+                    </th>
+                    <th>
+                        등급
+                    </th>
+                    <th>
+                        가입일
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (this.Items == null || this.Items.Length == 0)
+                {
+                    <tr>
+                        <td colspan="4">
+                            <div class="no-list">
+                                표시할 목록이 없습니다.
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in this.Items)
+                    {
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; cursor: pointer;" @onclick="() => { this.OpenDetail(item); }">
+                                    @item.Nickname
+                                </span>
+                            </td>
+                            <td>
+                                @(item.Gender == Database.GenderTypes.Male ? "남성" : "여성")
+                            </td>
+                            <td>
+                                @switch (item.LevelType)
+                                {
+                                    case Database.LevelTypes.Platinum:
+                                        <span>플래티넘</span>
+                                        break;
+                                    case Database.LevelTypes.Diamond:
+                                        <span>다이아몬드</span>
+                                        break;
+                                    case Database.LevelTypes.Gold:
+                                        <span>골드</span>
+                                        break;
+                                    case Database.LevelTypes.Silver:
+                                        <span>실버</span>
+                                        break;
+                                    default:
+                                        <span>-</span>
+                                        break;
+                                }
+                            </td>
+                            <td>
+                                @item.CreateTime.ToString("yyyy.MM.dd")
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <div class="pager">
+                            <btn @onclick="() => { this.QueryItem.Page--; this.MovePage(); }">
+                                <i class="fas fa-chevron-left"></i>
+                            </btn>
+                            <input type="number" @bind="this.QueryItem.Page" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") this.MovePage(); }'/>
+                            <span>/ @this.QueryItem.TotalPageCount.ToString("#,##0")</span>
+                            <btn @onclick="() => { this.QueryItem.Page++; this.MovePage(); }">
+                                <i class="fas fa-chevron-right"></i>
+                            </btn>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}

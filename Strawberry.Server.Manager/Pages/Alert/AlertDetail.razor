@@ -1,0 +1,83 @@
+﻿@page "/alertdetail/{ContentType:int}/{Id:int}"
+@layout EmptyLayout
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">신고 정보</span>
+        <div class="context-box">
+            @if (this.ContentType == 0)
+            {
+                var item = (Database.Tables.Member_AlertProfile)this.Item;
+
+                <div class="row-box">
+                    <span class="label-name">신고자 닉네임</span>
+                    <input @bind="item.Member.Nickname" disabled />
+                    <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="OpenDetailWindowOwner">신고자 정보</button>
+                </div>
+                <div class="row-box">
+                    <span class="label-name">대상자 닉네임</span>
+                    <input @bind="item.Partner.Nickname" disabled />
+                    <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="OpenDetailWindowTarget">신고 대상 정보</button>
+                </div>
+                <div class="row-box">
+                    <span class="label-name">신고 제목</span>
+                    <input @bind="item.Title" disabled />
+                </div>
+                <div class="row-box">
+                    <span class="label-name">신고 내용</span>
+                    <textarea @bind="item.Message" disabled></textarea>
+                </div>
+            }
+            @if (this.ContentType == 1)
+            {
+                var item = (Database.Tables.Member_AlertPoomPoom)this.Item;
+
+                <div class="row-box">
+                    <span class="label-name">신고자 닉네임</span>
+                    <input @bind="item.Member.Nickname" disabled />
+                    <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="OpenDetailWindowOwner">신고자 정보</button>
+                </div>
+                <div class="row-box">
+                    <span class="label-name">대상자 닉네임</span>
+                    <input @bind="item.PoomPoom.Member.Nickname" disabled />
+                    <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="OpenDetailWindowTarget">신고 대상 정보</button>
+                </div>
+                <div class="row-box">
+                    <span class="label-name">신고 제목</span>
+                    <input @bind="item.Title" disabled />
+                </div>
+                <div class="row-box">
+                    <span class="label-name">신고 내용</span>
+                    <textarea @bind="item.Message" disabled></textarea>
+                </div>
+            }
+            @if (this.ContentType == 2)
+            {
+                var item = (Database.Tables.Member_AlertComment)this.Item;
+
+                <div class="row-box">
+                    <span class="label-name">신고자 닉네임</span>
+                    <input @bind="item.Member.Nickname" disabled />
+                    <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="OpenDetailWindowOwner">신고자 정보</button>
+                </div>
+                <div class="row-box">
+                    <span class="label-name">대상자 닉네임</span>
+                    <input @bind="item.AlertComment.Member.Nickname" disabled />
+                    <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="OpenDetailWindowTarget">신고 대상자 정보</button>
+                </div>
+                <div class="row-box">
+                    <span class="label-name">신고 제목</span>
+                    <input @bind="item.Title" disabled />
+                </div>
+            }
+        </div>
+    </div>
+}

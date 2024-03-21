@@ -1,0 +1,99 @@
+﻿@page "/poompoomdetail/{id:int?}"
+@layout EmptyLayout
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">컨텐츠 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">닉네임</span>
+                @if (this.Id == 0)
+                {
+                    <select @bind="this.PageItem.Item.MemberId">
+                        <option value="0">== 회원을 선택하세요 ==</option>
+                        @foreach (var memberitem in this.MemberList)
+                        {
+                            <option value="@memberitem.Id">@memberitem.Nickname</option>
+                        }
+                    </select>
+                }
+                else
+                {
+                    <input @bind="this.PageItem.Nickname" disabled/>
+                }
+            </div>
+            <div class="row-box">
+                <span class="label-name">컨텐츠 타입</span>
+                <select @bind="this.PageItem.Item.ContentType">
+                    <option value="@Database.ContentTypes.Boast">자랑</option>
+                    <option value="@Database.ContentTypes.Metting">번개</option>
+                    <option value="@Database.ContentTypes.Sell">판매</option>
+                    <option value="@Database.ContentTypes.Talk">수다</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">이미지</span>
+                <div class="img-box">
+                    <div>
+                        @if (this.PageItem.Item.PoomPoom_Images != null)
+                        {
+                            foreach (var item in this.PageItem.Item.PoomPoom_Images)
+                            {
+                                <div>
+                                    <div class="btn-removeimg">
+                                        <button @onclick="() => { this.RemoveProfileImage(item); }">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <img style="cursor: pointer;" src="@item.Url" @onclick="() => { this.OpenWindowDetailImage(item); }" />
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+                <button class="accept" style="width: 100%; margin-top: 5px;" onclick="$(this).next().click();">+</button>
+                <InputFile style="display: none;" OnChange="ImageUpload"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">내용</span>
+                <textarea @bind="this.PageItem.Item.Content" style="height: 160px;"></textarea>
+            </div>
+            <div class="row-box">
+                <span class="label-name">장소</span>
+                <input @bind="this.PageItem.Item.Area"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">시간</span>
+                <input @bind="this.PageItem.Item.Time"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">댓글 허용여부</span>
+                <input @bind="this.PageItem.Item.UseComment" type="checkbox" style="width: 20px; height: 20px; cursor: pointer;" /> 댓글 작성을 허용함
+            </div>
+            
+            @if (this.PageItem.Item.PoomPoom_Comments != null && this.PageItem.Item.PoomPoom_Comments.Count > 0)
+            {
+                <div class="row-box">
+                    <span class="label-name">댓글</span>
+                    @foreach (var comment in this.PageItem.Item.PoomPoom_Comments)
+                    {
+                        <div class="comment-box">
+                            <i class="fas fa-times" @onclick="() => { this.RemoveComment(comment); }"></i>
+                            <span @onclick="() => { this.OpenCommentMember(comment.MemberId); }">@(comment.Member?.Nickname ?? "-")</span>
+                            <span>@comment.Comment</span>
+                        </div>
+                    }
+                </div>   
+            }
+        </div>
+        <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="AcceptMemberAsync">적용</button>
+    </div>
+}

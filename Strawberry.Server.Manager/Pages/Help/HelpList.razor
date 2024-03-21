@@ -1,0 +1,83 @@
+﻿@page "/helplist"
+@layout MainLayout
+
+@if (!this.IsInit)
+{
+    <div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <span class="label-title">도움말 목록</span>
+    <div class="context-box">
+        <div class="filter-box">
+            <div style="flex-grow: 1; text-align: end; padding-right: 10px;">
+                <button class="accept" style="display: inline-block;" @onclick="OpenDetail">신규등록</button>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        제목
+                    </th>
+                    <th style="width: 200px;">
+                        등록일
+                    </th>
+                    <th style="width: 100px;">
+                        -
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (this.Items == null || this.Items.Length == 0)
+                {
+                    <tr>
+                        <td colspan="3">
+                            <div class="no-list">
+                                표시할 목록이 없습니다.
+                            </div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in this.Items)
+                    {
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; cursor: pointer;" @onclick="() => { this.OpenDetail(item); }">
+                                    @item.Title
+                                </span>
+                            </td>
+                            <td>
+                                @item.CreateTime.ToString("yyyy.MM.dd")
+                            </td>
+                            <td>
+                                <button style="background-color: #e11b1b; color: #ffffff;" @onclick="() => { this.RemoveItemAsync(item); }">삭제</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <div class="pager">
+                            <btn @onclick="() => { this.Page--; this.MovePage(); }">
+                                <i class="fas fa-chevron-left"></i>
+                            </btn>
+                            <input type="number" @bind="this.Page" @bind:event="oninput" @onkeydown='(e) => { if (e.Key == "Enter") this.MovePage(); }'/>
+                            <span>/ @this.TotalPageCount.ToString("#,##0")</span>
+                            <btn @onclick="() => { this.Page++; this.MovePage(); }">
+                                <i class="fas fa-chevron-right"></i>
+                            </btn>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}

@@ -1,0 +1,42 @@
+﻿@page "/requestroyaldetail/{id:int}"
+@layout EmptyLayout
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">인증신청 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">신청자 닉네임</span>
+                <input @bind="this.Item.Member.Nickname" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">신청 시간</span>
+                <input @bind="this.Item.CreateTime" disabled type="datetime" />
+            </div>
+            <div class="row-box">
+                <span class="label-name">요청타입</span>
+                <input value="@(this.Item.IsFastWork ? "빠른요청" : "일반요청")" disabled />
+            </div>
+            <div class="row-box">
+                <span class="label-name">처리상태</span>
+                <select @onchange="(e) => { this.Item.IsComplete = bool.Parse((string)e.Value); }">
+                    <option value="False" selected="@(!this.Item.IsComplete)">처리중</option>
+                    <option value="True" selected="@(this.Item.IsComplete)">처리완료</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">메모</span>
+                <textarea style="height: 200px;" @bind="this.Item.Note"></textarea>
+            </div>
+        </div>
+        <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="AcceptItemAsync">적용</button>
+    </div>
+}

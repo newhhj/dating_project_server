@@ -1,0 +1,63 @@
+﻿@page "/addetail/{id:int?}"
+@using Newtonsoft.Json
+@layout EmptyLayout
+
+@if (!this.IsInit)
+{
+	<div class="pageloading-box">
+        데이터를 불러오는 중입니다.<br />
+        잠시만 기다려 주세요.
+    </div>
+}
+else
+{
+    <div style="padding: 10px;">
+        <span class="label-title">광고 정보</span>
+        <div class="context-box">
+            <div class="row-box">
+                <span class="label-name">광고명</span>
+                <input @bind="this.PageItem.ADName"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">광고 타입</span>
+                <select @bind="this.PageItem.ADType">
+                    <option value="@Database.ADTypes.MainPopup">메인팝업</option>
+                    <option value="@Database.ADTypes.SettingBanner">설정배너</option>
+                </select>
+            </div>
+            <div class="row-box">
+                <span class="label-name">이미지</span>
+                <div class="img-box">
+                    <div>
+                        @if (!string.IsNullOrWhiteSpace(this.PageItem.JsonData))
+                        {
+                            var data = JsonConvert.DeserializeObject<dynamic>(this.PageItem.JsonData);
+
+                            switch (this.PageItem.ADType)
+                            {
+                                case Database.ADTypes.MainPopup:
+                                case Database.ADTypes.SettingBanner:
+                                    <div>
+                                        <div class="btn-removeimg">
+                                            <button @onclick="this.ImageRemove">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <img style="cursor: pointer;" src="@data.ImageUrl" @onclick="() => { this.OpenWindowDetailImage(data.ImageUrl); }" />
+                                    </div>
+                                    break;
+                            }
+                        }
+                    </div>
+                </div>
+                <button class="accept" style="width: 100%; margin-top: 5px;" onclick="$(this).next().click();">+</button>
+                <InputFile style="display: none;" OnChange="ImageUpload"/>
+            </div>
+            <div class="row-box">
+                <span class="label-name">연결링크</span>
+                <input @bind="this.PageItem.Link" placeholder="http://"/>
+            </div>
+        </div>
+        <button class="accept" style="width: 100%; margin-top: 10px;" @onclick="AcceptMemberAsync">적용</button>
+    </div>
+}

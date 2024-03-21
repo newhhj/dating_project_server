@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\1.SourceXamarin\Strawberry\Strawberry.Server.Manager\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2022-11-23T10:19:50.6406216Z;True|2022-11-23T19:19:42.0564646+09:00;True|2022-11-18T19:55:57.2927194+09:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
